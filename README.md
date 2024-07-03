@@ -10,11 +10,11 @@ Mu is a Muslim app platform that provides a simple set of building blocks for li
 
 The current list of apps:
 
-- **Chat** - General knowledge AI chat
+- **Chat** - General knowledge AI Q&A
 - **News** - News headlines and market data
-- **Pray** - Islamic prayer times
-- **Reminder** - The holy Quran in English
-- **Watch** - Watch YouTube videos
+- **Pray** - Islamic prayer times by city 
+- **Reminder** - Read the Quran in English
+- **Watch** - Search and watch YouTube videos
 - **Work** - For the sake of Allah 
   
 ## Dependencies
