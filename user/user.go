@@ -49,6 +49,21 @@ func newSess(acc *Account) *Session {
 	return sess
 }
 
+func Get(r *http.Request) (*Account, error) {
+	c, err := r.Cookie("user")
+	if err != nil {
+		return nil, err
+	}
+	if len(c.Value) == 0 {
+		return nil, errors.New("no user")
+	}
+	acc, ok := users[c.Value]
+	if !ok {
+		return nil, errors.New("no user")
+	}
+	return acc, nil
+}
+
 // Admin is the user admin
 func Admin(w http.ResponseWriter, r *http.Request) {
 	// get user cookie
@@ -84,6 +99,14 @@ func Admin(w http.ResponseWriter, r *http.Request) {
 	// list the users
 	html := mu.Template("Admin", "User Admin", "", `<h1 style="padding-top: 100px;">Users</h1>`+div)
 	mu.Render(w, html)
+}
+
+func Exists(u string) bool {
+	mutex.Lock()
+	defer mutex.Unlock()
+
+	_, ok := users[u]
+	return ok
 }
 
 // Login a user

@@ -1,15 +1,12 @@
 {
-  "name": "Mu",
-  "short_name": "Mu",
+  "name": "Micro",
+  "short_name": "Micro",
   "description": "Building blocks for life",
-  "scope": "https://mu.xyz/",
+  "scope": "https://micro.mu/",
   "start_url": "/",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "display": "standalone", 
-  "scope_extensions": [
-	  {"origin": "https://*.mu.xyz"}
-  ],
   "icons": [
       {
         "src": "/assets/mu.png",

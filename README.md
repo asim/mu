@@ -78,8 +78,8 @@ Caching and offline mode is still a WIP.
 
 ## Development
 
-Join [Discord](https://mu.xyz/discord) if interested.
+Join [Discord](https://micro.mu/discord) if interested.
 
 ## Live
 
-Go to [https://mu.xyz](https://mu.xyz) to use the app.
+Go to [https://micro.mu](https://micro.mu) to use the app.
