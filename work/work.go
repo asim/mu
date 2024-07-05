@@ -3,7 +3,7 @@ package work
 import (
 	"net/http"
 
-	"github.com/micro/mu"
+	"micro.mu"
 )
 
 var timer = `

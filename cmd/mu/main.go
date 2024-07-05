@@ -3,15 +3,15 @@ package main
 import (
 	"net/http"
 
-	"github.com/micro/mu"
-	"github.com/micro/mu/chat"
-	"github.com/micro/mu/home"
-	"github.com/micro/mu/news"
-	"github.com/micro/mu/pray"
-	"github.com/micro/mu/reminder"
-	"github.com/micro/mu/user"
-	"github.com/micro/mu/watch"
-	"github.com/micro/mu/work"
+	"micro.mu"
+	"micro.mu/chat"
+	"micro.mu/home"
+	"micro.mu/news"
+	"micro.mu/pray"
+	"micro.mu/reminder"
+	"micro.mu/user"
+	"micro.mu/watch"
+	"micro.mu/work"
 )
 
 func main() {

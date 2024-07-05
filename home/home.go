@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/micro/mu"
+	"micro.mu"
 )
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {

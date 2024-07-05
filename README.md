@@ -26,7 +26,7 @@ The current list of apps:
 Download source
 
 ```bash
-go install github.com/micro/mu/cmd/mu@latest
+go install micro.mu/cmd/mu@latest
 ```
 
 Run it

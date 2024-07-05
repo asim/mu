@@ -12,7 +12,7 @@ import (
 	//"strings"
 	"sync"
 
-	"github.com/micro/mu"
+	"micro.mu"
 
 	"github.com/google/uuid"
 
