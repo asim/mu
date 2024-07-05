@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/hablullah/go-prayer"
-	"mu.dev"
+	"github.com/micro/mu"
 )
 
 var (

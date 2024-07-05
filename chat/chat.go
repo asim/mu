@@ -12,7 +12,7 @@ import (
 	//"strings"
 	"sync"
 
-	"mu.dev"
+	"github.com/micro/mu"
 
 	"github.com/google/uuid"
 
@@ -31,7 +31,7 @@ type Channel struct {
 
 var channels = map[string]*Channel{
 	"general": new(Channel),
-	"finance":  new(Channel),
+	"finance": new(Channel),
 	"health":  new(Channel),
 	"islam":   new(Channel),
 	"misc":    new(Channel),

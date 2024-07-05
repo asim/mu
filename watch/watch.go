@@ -3,7 +3,7 @@ package watch
 import (
 	"context"
 	"fmt"
-	"mu.dev"
+	"github.com/micro/mu"
 	"net/http"
 	"net/url"
 	"os"

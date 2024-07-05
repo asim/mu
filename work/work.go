@@ -3,10 +3,10 @@ package work
 import (
 	"net/http"
 
-	"mu.dev"
+	"github.com/micro/mu"
 )
 
-	var timer = `
+var timer = `
 <style>
   
 .main { 

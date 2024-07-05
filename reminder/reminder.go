@@ -4,7 +4,7 @@ import (
 	"embed"
 	"encoding/json"
 	"fmt"
-	"mu.dev"
+	"github.com/micro/mu"
 	"net/http"
 )
 

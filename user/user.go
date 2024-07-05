@@ -13,7 +13,7 @@ import (
 
 	"golang.org/x/crypto/bcrypt"
 
-	"mu.dev"
+	"github.com/micro/mu"
 )
 
 var mutex sync.Mutex
