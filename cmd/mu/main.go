@@ -11,7 +11,6 @@ import (
 	"micro.mu/reminder"
 	"micro.mu/user"
 	"micro.mu/watch"
-	"micro.mu/work"
 )
 
 func main() {
@@ -49,9 +48,6 @@ Allow: /`))
 	// watch
 	http.HandleFunc("/watch", watch.WatchHandler)
 
-	// work
-	http.HandleFunc("/work", work.Handler)
-
 	// any other stuff
 	chat.Register()
 	home.Register()
@@ -60,7 +56,6 @@ Allow: /`))
 	reminder.Register()
 	user.Register()
 	watch.Register()
-	work.Register()
 
 	mu.Serve(8080)
 }

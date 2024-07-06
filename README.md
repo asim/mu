@@ -15,7 +15,6 @@ The current list of apps:
 - **Pray** - Islamic prayer times by city 
 - **Reminder** - Read the Quran in English
 - **Watch** - Search and watch YouTube videos
-- **Work** - For the sake of Allah 
   
 ## Dependencies
 

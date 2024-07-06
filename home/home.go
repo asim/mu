@@ -56,11 +56,6 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 		Watch
 	      </button>
 	    </a>
-	    <a href="/work">
-	      <button>
-		Work
-	      </button>
-	    </a>
 	  </div>
 	`)
 
