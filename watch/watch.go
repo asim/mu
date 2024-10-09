@@ -38,6 +38,9 @@ func embedVideo(id string) string {
 }
 
 func getResults(q string) (string, error) {
+	if Client == nil {
+		return "", fmt.Errorf("No client")
+	}
 	resp, err := Client.Search.List([]string{"id", "snippet"}).Q(q).MaxResults(25).Do()
 	if err != nil {
 		return "", err
