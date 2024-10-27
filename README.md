@@ -12,7 +12,7 @@ Most tech platforms create addictive behaviours through their algorithms. The in
 The current list of apps:
 
 - **Chat** - General knowledge AI Q&A
-- **News** - Hadiths, headlines and markets
+- **News** - Hadiths, headlines and crypto
 - **Pray** - Islamic prayer times by city 
 - **Reminder** - Read the Quran in English
 - **Watch** - Search for YouTube videos
