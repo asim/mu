@@ -25,7 +25,7 @@ The current list of apps:
 Download source
 
 ```bash
-go install micro.mu/cmd/mu@latest
+go install github.com/asim/mu/cmd/mu@latest
 ```
 
 Run it

@@ -4,7 +4,7 @@ import (
 	"embed"
 	"encoding/json"
 	"fmt"
-	"micro.mu"
+	"github.com/asim/mu"
 	"net/http"
 )
 

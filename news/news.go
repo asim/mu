@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	"micro.mu"
+	"github.com/asim/mu"
 
 	"github.com/mmcdole/gofeed"
 )

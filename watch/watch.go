@@ -3,7 +3,7 @@ package watch
 import (
 	"context"
 	"fmt"
-	"micro.mu"
+	"github.com/asim/mu"
 	"net/http"
 	"net/url"
 	"os"

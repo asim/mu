@@ -1,4 +1,4 @@
-module micro.mu
+module github.com/asim/mu
 
 go 1.20
 

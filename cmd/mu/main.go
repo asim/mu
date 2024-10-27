@@ -3,14 +3,14 @@ package main
 import (
 	"net/http"
 
-	"micro.mu"
-	"micro.mu/chat"
-	"micro.mu/home"
-	"micro.mu/news"
-	"micro.mu/pray"
-	"micro.mu/reminder"
-	"micro.mu/user"
-	"micro.mu/watch"
+	"github.com/asim/mu"
+	"github.com/asim/mu/chat"
+	"github.com/asim/mu/home"
+	"github.com/asim/mu/news"
+	"github.com/asim/mu/pray"
+	"github.com/asim/mu/reminder"
+	"github.com/asim/mu/user"
+	"github.com/asim/mu/watch"
 )
 
 func main() {
