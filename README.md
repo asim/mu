@@ -1,6 +1,6 @@
 # mu
 
-A Micro app platform
+A muslim app platform
 
 ## Overview
 
