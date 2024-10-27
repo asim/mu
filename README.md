@@ -74,7 +74,3 @@ export YOUTUBE_API_KEY
 Mu operates as a progressive web app. The main app can be installed just like a native app. 
 
 Caching and offline mode is still a WIP.
-
-## Live
-
-Go to [https://micro.mu](https://micro.mu) to use the app.
