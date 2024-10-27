@@ -13,7 +13,7 @@ The current list of apps:
 
 - **Chat** - General knowledge AI Q&A
 - **News** - Hadiths, headlines and crypto
-- **Pray** - Islamic prayer times by city 
+- **Pray** - Prayer times by location 
 - **Reminder** - Read the Quran in English
 - **Watch** - Search for YouTube videos
   
