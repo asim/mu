@@ -15,7 +15,7 @@ The current list of apps:
 - **News** - Hadiths, headlines and markets
 - **Pray** - Islamic prayer times by city 
 - **Reminder** - Read the Quran in English
-- **Watch** - Search and watch YouTube videos
+- **Watch** - Search for YouTube videos
   
 ## Dependencies
 
