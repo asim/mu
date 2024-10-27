@@ -4,7 +4,8 @@ A Micro app platform
 
 ## Overview
 
-Mu is a Micro app platform that provides a simple set of building blocks for life. It was born out of a frustration with existing services. Most tech platforms create addictive behaviours through their algorithms. The intention is to create a separate system that fixes this. Part of the goal is to focus on apps for Muslims like prayer times, the quran in english, etc. Other parts are related to interests like news, open source activity, crypto and productivity tools.
+Mu is an app platform that provides a simple set of building blocks for life. It was born out of a frustration with existing services. 
+Most tech platforms create addictive behaviours through their algorithms. The intention is to create a separate system that fixes this.
 
 ## Apps
 
