@@ -13,6 +13,7 @@ import (
 	"sync"
 
 	"github.com/asim/mu"
+	"github.com/asim/mu/user"
 
 	"github.com/google/uuid"
 
@@ -146,13 +147,13 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
 	// get the channel
 	text := ""
-	for i, m := range ch.Messages {
+	for _, m := range ch.Messages {
 		class := "message"
 
-		mod := i % 2
-		if mod != 0 {
-			class = "message mu"
-		}
+		//mod := i % 2
+		//if mod != 0 {
+		//	class = "message mu"
+		//}
 
 		text += fmt.Sprintf(`<div class="%s">%s</div>`, class, m)
 	}
@@ -181,7 +182,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
          padding: 10px;
        }
        .message {
-         padding: 10px 10px;
+         padding: 5px 5px;
        }
        #text {
 	 height: calc(100% - 140px);
@@ -212,6 +213,12 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
     </div>
 
     <script>
+        function getCookie(name) {
+          const value = ` + "`; ${document.cookie}`" + `;
+          const parts = value.split(` + "`; ${name}=`" + `);
+          if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
 	String.prototype.parseURL = function(embed) {
 	    return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&~\?\/.=]+/g, function(url) {
 		if (embed == true) {
@@ -240,11 +247,17 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
       form.addEventListener("submit", function(ev) {
 	ev.preventDefault();
         var data = document.getElementById("form");
+	var user = getCookie("user");
 	var uuid = form.elements["uuid"].value;
         var prompt = form.elements["prompt"].value;
 	var channel = form.elements["channel"].value;
 	form.elements["prompt"].value = '';
-	text.innerHTML += "<div class='message mu'>" + prompt.parseURL() + "</div>";
+
+	if (prompt.length == 0) {
+		return false;
+	}
+
+	text.innerHTML += "<div class='message'>" + user + ": " + prompt.parseURL() + "</div>";
 	text.scrollTo(0, text.scrollHeight);
 	var data = {"uuid": uuid, "prompt": prompt, "markdown": true, channel: channel};
 
@@ -346,6 +359,8 @@ func PromptHandler(w http.ResponseWriter, r *http.Request) {
 
 	id := req.UUID
 	prompt := req.Prompt
+	user, _ := user.Get(r)
+
 
 	if len(req.UUID) == 0 {
 		fmt.Println("uuid", id)
@@ -358,6 +373,10 @@ func PromptHandler(w http.ResponseWriter, r *http.Request) {
 
 	if len(req.Channel) == 0 {
 		req.Channel = "general"
+	}
+
+	if user != nil {
+		prompt = fmt.Sprintf("%s: %v", user.Username, prompt)
 	}
 
 	mutex.Lock()
