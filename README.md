@@ -35,6 +35,8 @@ Run it
 mu
 ```
 
+Then go to `http://localhost:8080`
+
 ## Admin
 
 A basic user admin on `/admin` displays the users. It requires `USER_ADMIN` to be set to the user who can view it
