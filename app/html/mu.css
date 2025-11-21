@@ -378,6 +378,7 @@ body:has(#messages) #content {
   color: #333;
   transition: color 0.2s;
   cursor: pointer;
+  font-weight: normal;
 }
 
 #topic-selector .head:hover {
